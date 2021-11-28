@@ -6,4 +6,4 @@ while a < b:
     a = a * 1.1
     c += 1
 
-print (c)
+print(c)
