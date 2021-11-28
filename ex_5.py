@@ -4,7 +4,7 @@ result = user_proceeds - user_costs
 
 if user_proceeds > user_costs:
     print(f'Ваша прибыль составляет: {result}\n' +
-          f'Рентабельность вашей выручки составляет: {float(result // user_proceeds)}')
+          f'Рентабельность вашей выручки составляет: {(result / user_proceeds):02}')
     number_of_workers = int(input('Введите количество сотрудников вашей фирмы: '))
     print(f'Прибыль в расчете на одного сотрудника составляет: {int(result // number_of_workers)}')
 
