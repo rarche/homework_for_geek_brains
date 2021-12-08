@@ -12,4 +12,8 @@ def numb_sum_max(num_1, num_2, num_3):
     numb_sum = numb_list[0] + numb_list[1]
     return numb_sum
 
-print(numb_sum_max(10,4,12))
+
+a = int(input('input 1-st number: '))
+b = int(input('input 2-nd number: '))
+c = int(input('input 3-rd number: '))
+print(numb_sum_max(a, b, c))

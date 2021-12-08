@@ -8,7 +8,7 @@ def divide_numb (num_1, num_2):
     if num_2 == 0:
         result = 'Phew! Universe is safe. But please, be careful next time.'
     else:
-        result = num_1 // num_2
+        result = num_1 / num_2
     return result
 
 num_1 = int(input('Please, input 1-st number: '))

@@ -1,10 +1,10 @@
-def person_description(**kwargs):
+def person_description(name, second_name, birth_date, city, mail, phone_number):
     """
     Put all information about person in one string
     :param kwargs: tuple
     :return: tuple
     """
-    return kwargs
+    return f'{name} {second_name} {birth_date} {city} {mail} {phone_number}'
 
 name = input('Input your name: ')
 second_name = input('Input your second name: ')

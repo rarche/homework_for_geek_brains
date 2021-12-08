@@ -6,11 +6,11 @@ def numb_expo(num_1, num_2):
     :return:
     """
     count = -1
-    num_1 = 1 / num_1
     while count != num_2:
-        num_1 *= num_1
+        num_1 += num_1
         count -= 1
 
-    return num_1
-
-print(numb_expo(2, -2))
+    return 1 / num_1
+a = int(input('Input positive number: '))
+b = int(input('Input negative number: '))
+print(numb_expo(a, b))
