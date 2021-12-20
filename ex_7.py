@@ -4,5 +4,5 @@ def num_fact(number):
         fact *= i
         yield fact
 
-for el in num_fact(10):
-    print(el)
+for count,el in enumerate(num_fact(10)):
+    print(f'{count+1}. {el}')
