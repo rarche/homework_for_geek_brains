@@ -44,7 +44,7 @@ class Matrix:
 
 
 my_matrix_1 = Matrix([[randint(0,99) for _ in range(10)] for _ in range(10)])
-my_matrix_2 = Matrix([[randint(0,99) for _ in range(10)] for _ in range(10)])
+my_matrix_2 = Matrix([[randint(0,98) for _ in range(10)] for _ in range(10)])
 print(my_matrix_1)
 print(my_matrix_2)
 my_matrix_1 + my_matrix_2
