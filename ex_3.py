@@ -29,6 +29,7 @@ class Cell:
 
 my_cell_1 = Cell(15)
 my_cell_2 = Cell(10)
+my_cell_3 = Cell(23)
 print(my_cell_1 + my_cell_2)
 print(my_cell_1 - my_cell_2)
 print(my_cell_1 * my_cell_2)
