@@ -3,30 +3,43 @@ from abc import ABC, abstractmethod
 
 class Cloth(ABC):
 
-    def __init__(self, title, atr_1):
-        self.title = title
-        self.atr_1 = atr_1
-
     @abstractmethod
     def material(self):
         pass
 
 
 class Coat(Cloth):
+    def __init__(self, h):
+        self.h = h
+
     @property
     def material(self):
-        result = (int(self.atr_1)/6.5 + 0.5)
-        return f'Понадобится {result} метров ткани'
+        result = self.h / 6.5 + 0.5
+        return result
 
 
 class Costume(Cloth):
+    def __init__(self, v):
+        self.v = v
+
     @property
     def material(self):
-        result = (int(self.atr_1) * 2 + 0.3)
-        return f'Понадобится {result} метров ткани'
+        result = 2 * self.v + 0.3
+        return result
+
+    def sum_material(self, list_s):
+        n = 0
+        for i in list_s:
+            n += i.material
+        return n
 
 
-my_coat = Coat('favourite coat', 1.5)
-my_costume = Costume('favourite_costume', 2.0)
+my_coat = Coat(50)
+my_costume_1 = Costume(1.96)
+my_costume_2 = Costume(1.24)
+my_costume_3 = Costume(1.76)
+my_costume_4 = Costume(2.10)
+list_costumes = [my_costume_1, my_costume_2, my_costume_3, my_costume_4]
 print(my_coat.material)
-print(my_costume.material)
+print(my_costume_1.material)
+print(my_costume_1.sum_material(list_costumes))
